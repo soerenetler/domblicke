@@ -20,7 +20,7 @@ var wms_layers = [];
             
             source: new ol.source.XYZ({
             attributions: ' ',
-                url: 'https://soerenetler.github.io/domblicke/images/Domblick_Kacheln{z}/{x}/{y}.png'
+                url: 'file:///users/sorenetler/Documents/Daten_Projekte/Ansichten_Magdeburger_Dom/Kacheln/{z}/{x}/{y}.png'
             })
         });
 
