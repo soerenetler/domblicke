@@ -450,7 +450,7 @@ var Title = new ol.control.Control({
     element: (() => {
         var titleElement = document.createElement('div');
         titleElement.className = 'top-left-title ol-control';
-        titleElement.innerHTML = '<h2 class="project-title">Domblicke</h2>';
+        titleElement.innerHTML = '<h2 class="project-title">🔔 Domblicke in Magdeburg</h2>';
         return titleElement;
     })(),
     target: 'top-left-container'
@@ -481,13 +481,13 @@ var Abstract = new ol.control.Control({
             window.showAbstract = function() {
                 linkElement.classList.remove("project-abstract");
                 linkElement.classList.add("project-abstract-uncollapsed");
-                linkElement.innerHTML = 'Domblicke zeigt, von welchen Orten in Magdeburg man den Dom sehen kann. Gebiete von denen man keinene Blick auf den Dom hat, sind grau hinterlegt. /n ';
+                linkElement.innerHTML = 'Domblicke zeigt, von welchen Orten in Magdeburg man den Dom sehen kann. Gebiete von denen man keinene Blick auf den Dom hat, sind grau hinterlegt. \n\n Dies ist ein Projekt von Sören Etler. \n <a href="soerenetler.de">Impressum</a>';
             }
 
             hideAbstract();
         } else {
             linkElement.classList.add("project-abstract-uncollapsed");
-            linkElement.innerHTML = 'Dombliecke zeigt, von welchen Orten in Magdeburg man den Dom sehen kann.';
+            linkElement.innerHTML = 'Domblicke zeigt, von welchen Orten in Magdeburg man den Dom sehen kann. Gebiete von denen man keinene Blick auf den Dom hat, sind grau hinterlegt. \n\n Dies ist ein Projekt von Sören Etler. \n <a href="soerenetler.de">Impressum</a>';
         }
 
         titleElement.appendChild(linkElement);
