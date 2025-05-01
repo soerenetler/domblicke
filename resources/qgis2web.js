@@ -467,7 +467,7 @@ var Abstract = new ol.control.Control({
 
         var linkElement = document.createElement('a');
 
-        if (72 > 240) {
+        if (250 > 240) {
             linkElement.setAttribute("onmouseenter", "showAbstract()");
             linkElement.setAttribute("onmouseleave", "hideAbstract()");
             linkElement.innerHTML = 'i';
@@ -481,7 +481,7 @@ var Abstract = new ol.control.Control({
             window.showAbstract = function() {
                 linkElement.classList.remove("project-abstract");
                 linkElement.classList.add("project-abstract-uncollapsed");
-                linkElement.innerHTML = 'Dombliecke zeigt, von welchen Orten in Magdeburg man den Dom sehen kann.';
+                linkElement.innerHTML = 'Domblicke zeigt, von welchen Orten in Magdeburg man den Dom sehen kann. Gebiete von denen man keinene Blick auf den Dom hat, sind grau hinterlegt. /n ';
             }
 
             hideAbstract();

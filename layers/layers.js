@@ -14,7 +14,7 @@ var wms_layers = [];
         });
 
         var lyr_DomblickeOnline_1 = new ol.layer.Tile({
-            'title': 'Domblicke Online',
+            'title': 'Domblicke',
             'opacity': 1.000000,
             
             
