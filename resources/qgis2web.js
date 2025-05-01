@@ -481,7 +481,7 @@ var Abstract = new ol.control.Control({
             window.showAbstract = function() {
                 linkElement.classList.remove("project-abstract");
                 linkElement.classList.add("project-abstract-uncollapsed");
-                linkElement.innerHTML = 'Domblicke zeigt, von welchen Orten in Magdeburg man den Dom sehen kann. Gebiete von denen man keinene Blick auf den Dom hat, sind grau hinterlegt. \n\n Dies ist ein Projekt von Sören Etler. \n <a href="soerenetler.de">Impressum</a>';
+                linkElement.innerHTML = 'Domblicke zeigt, von welchen Orten in Magdeburg man den Dom sehen kann. Gebiete von denen man keinene Blick auf den Dom hat, sind grau hinterlegt. <br><br> Dies ist ein Projekt von Sören Etler. <br> <a href="https://soerenetler.de">Impressum</a>';
             }
 
             hideAbstract();
