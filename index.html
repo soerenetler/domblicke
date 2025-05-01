@@ -18,7 +18,7 @@
             margin: 0;
         }
         </style>
-        <title>Domblicke</title>
+        <title></title>
     </head>
     <body>
         <div id="map">
@@ -116,18 +116,18 @@
         });
         layer_OpenStreetMap_0;
         map.addLayer(layer_OpenStreetMap_0);
-        var overlaysTree = [
-            {label: "OpenStreetMap", layer: layer_OpenStreetMap_0, radioGroup: 'bm' },]
-        var lay = L.control.layers.tree(null, overlaysTree,{
-            //namedToggle: true,
-            //selectorBack: false,
-            //closedSymbol: '&#8862; &#x1f5c0;',
-            //openedSymbol: '&#8863; &#x1f5c1;',
-            //collapseAll: 'Collapse all',
-            //expandAll: 'Expand all',
-            collapsed: true,
+        map.createPane('pane_XYZLayer_1');
+        map.getPane('pane_XYZLayer_1').style.zIndex = 401;
+        var layer_XYZLayer_1 = L.tileLayer('file:///users/sorenetler/Documents/Daten_Projekte/Ansichten_Magdeburger_Dom/Kacheln/{z}/{x}/{y}.png', {
+            pane: 'pane_XYZLayer_1',
+            opacity: 1.0,
+            attribution: '',
+            minZoom: 8,
+            maxZoom: 16,
+            minNativeZoom: 0,
         });
-        lay.addTo(map);
+        layer_XYZLayer_1;
+        map.addLayer(layer_XYZLayer_1);
         setBounds();
         </script>
     </body>
